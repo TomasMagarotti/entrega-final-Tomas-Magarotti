@@ -1,3 +1,4 @@
+/* variables colores */ /* variables margin */
 * {
   list-style: none;
   font-family: sans-serif;
@@ -11,6 +12,8 @@ body {
 .nav_container h1 {
   text-align: center;
   font-size: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .container {
@@ -34,15 +37,20 @@ section img {
   border-radius: 5%;
 }
 
-section.tittle_container {
+.tittle_container {
   font-size: 1.5rem;
   text-align: center;
   padding-top: 5em;
   padding-bottom: 5em;
 }
-
-section.tittle_container.h1 {
-  font-size: 4rem;
+.tittle_container h1 {
+  font-size: 3rem;
+  color: black;
+  transition: translateX(100px);
+}
+.tittle_container p {
+  font-size: 1.5rem;
+  color: rgb(1, 5, 5);
 }
 
 a {
@@ -60,9 +68,14 @@ li a {
 .main_container {
   margin-left: 1rem;
 }
-
 .main_container h1 {
   color: black;
+  font-size: 3rem;
+  margin-left: 1rem;
+}
+.main_container p {
+  font-size: 1.5rem;
+  margin: 1rem;
 }
 
 .image_container {
@@ -73,7 +86,7 @@ li a {
   height: 200%;
 }
 
-.encontratupasta {
+.encontra-tu-pasta {
   text-align: center;
   font-size: 1.5rem;
 }
@@ -84,7 +97,9 @@ li a {
 }
 
 footer {
+  background-color: rgba(129, 50, 19, 0.528);
   text-align: center;
+  margin-top: 1rem;
 }
 
 /*quienes somos*/
@@ -93,9 +108,8 @@ footer {
   flex-direction: column;
   justify-content: space-between;
   text-align: center;
-  background-color: bisque;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  background-color: rgba(255, 228, 196, 0.959);
+  margin: 2rem 2rem 2rem 2rem;
 }
 
 .flex-item1 {
@@ -151,7 +165,6 @@ footer {
 }
 
 /*productos*/
-
 .row {
   margin: 100px 0px 100px 100px;
 }
@@ -159,14 +172,21 @@ footer {
 /*promociones*/
 .borde {
   border: none;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 
 /*contacto*/
 .contenedor-contacto {
   display: flex;
-  margin: 2rem;
+  margin: 2rem 2rem 2rem 2rem;
   justify-content: center;
   flex-direction: column;
+}
+
+h2 {
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 /*# sourceMappingURL=main.css.map */

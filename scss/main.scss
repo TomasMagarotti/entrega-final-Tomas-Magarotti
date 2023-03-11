@@ -1,3 +1,8 @@
+
+
+@import "colores" ;
+@import "margin" ;
+
 *{
     list-style: none;
 font-family: sans-serif;
@@ -11,10 +16,12 @@ body{
 .nav_container h1{
     text-align: center;
     font-size: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .container{
-    border: solid 2px salmon ;}
+    border: solid 2px $salmon ;}
 
 .flex ul{
     display: flex;
@@ -28,23 +35,31 @@ body{
 a:hover{
  
     color:bisque;
-    background-color:salmon;
+    background-color:$salmon;
 }
- 
+ 
 section img{
     border-radius:5% ;
 }
 
-section.tittle_container{
+.tittle_container{
     font-size: 1.5rem;
     text-align: center;
     padding-top: 5em;
     padding-bottom: 5em;
+    
+    h1{font-size: 3rem;
+        color: black;
+        transition: translateX(100px);
+
+    }
+    p{
+        font-size: 1.5rem ;
+        color: rgb(1, 5, 5);
+    }
 }
 
-section.tittle_container.h1{
-    font-size: 4rem;
-}
+
 
 a{
     text-decoration: none;
@@ -64,13 +79,18 @@ li a{
 
 .main_container{
     margin-left: 1rem;
+    h1{
+        color: black;
+        font-size: 3rem;
+        margin-left: 1rem;
+    }
+    p{  
+        font-size: 1.5rem;
+        margin: 1rem
+    }
 }
 
-.main_container h1{
-    
-    color: black;
 
-}
 
 
 .image_container{
@@ -82,7 +102,7 @@ li a{
     
 }
 
-.encontratupasta
+.encontra-tu-pasta
 {
 text-align: center;
 font-size: 1.5rem;
@@ -94,11 +114,11 @@ font-size: 1.5rem;
 
 }
 
-footer{
+footer {
+    background-color:rgba(129, 50, 19, 0.528);
     text-align: center;
-    
-    
-}
+    margin-top: 1rem;
+  }
 
 /*quienes somos*/
 
@@ -109,9 +129,10 @@ footer{
     ;
    ;
     text-align: center;
-    background-color: bisque;
-    margin-left: 1rem;
-    margin-right: 1rem
+    background-color: rgba(255, 228, 196, 0.959);
+
+    margin: $m_2 $m_2 $m_2 $m_2;
+    
 }
 
 .flex-item1{
@@ -122,8 +143,9 @@ footer{
 .flex-item2{
     font-size: 2rem ;
     font-family: sans-serif;
-    color: rgb(129, 50, 19) ;
-}
+    color: rgb(129, 50, 19) ;}
+
+
 
 .grid-container{
     
@@ -186,13 +208,18 @@ footer{
 
 .borde{
     border: none;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
 }
 /*contacto*/ 
 
 .contenedor-contacto{
     display: flex;
-    margin: 2rem; 
+    margin: $m_2 $m_2 $m_2 $m_2; 
     justify-content: center;
     flex-direction: column;
   }
   
+  h2{
+    margin-top: 30px;
+    margin-bottom: 30px;}
