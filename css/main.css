@@ -7,13 +7,17 @@
 body {
   background-image: url("../multimedia/pastalinda.jpeg");
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .nav_container h1 {
+  background-color: salmon;
+  width: 250px;
+  color: bisque;
   text-align: center;
   font-size: 2rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin: auto;
+  margin-top: 2rem;
 }
 
 .container {
@@ -66,7 +70,7 @@ li a {
 }
 
 .main_container {
-  margin-left: 1rem;
+  background-color: rgba(240, 248, 255, 0.435);
 }
 .main_container h1 {
   color: black;
@@ -79,11 +83,12 @@ li a {
 }
 
 .image_container {
+  background-color: rgba(240, 248, 255, 0.435);
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: space-between;
-  height: 200%;
+  justify-content: space-evenly;
+  height: 16em;
 }
 
 .encontra-tu-pasta {
@@ -99,7 +104,11 @@ li a {
 footer {
   background-color: rgba(129, 50, 19, 0.528);
   text-align: center;
-  margin-top: 1rem;
+  margin-top: 3rem;
+}
+
+.footer {
+  margin-bottom: 0;
 }
 
 /*quienes somos*/
@@ -127,14 +136,14 @@ footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 200px 200px;
-  height: 35rem;
+  margin-bottom: 8rem;
   margin-left: 1rem;
   margin-right: 1rem;
+  background-color: rgba(240, 248, 255, 0.435);
 }
 
 .grid-item-1 {
   text-align: left;
-  margin: 20px;
 }
 
 .grid-item-2 {
@@ -144,7 +153,6 @@ footer {
 
 .grid-item-3 {
   text-align: center;
-  margin: 20px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
@@ -155,7 +163,6 @@ footer {
 
 .grid-item-5 {
   text-align: left;
-  margin: 20px;
   overflow: hidden;
 }
 
@@ -166,14 +173,27 @@ footer {
 
 /*productos*/
 .row {
-  margin: 100px 0px 100px 100px;
+  margin: 100px 100px 100px 100px;
+  text-align: center;
+}
+
+.container-productos {
+  background-color: rgba(211, 211, 211, 0.505);
+}
+.container-productos h2 {
+  color: rgb(233, 80, 80);
 }
 
 /*promociones*/
 .borde {
   border: none;
-  margin-top: 4rem;
+  margin-top: 1rem;
   margin-bottom: 4rem;
+}
+
+.titulo-promociones {
+  text-align: center;
+  margin: 4rem;
 }
 
 /*contacto*/
